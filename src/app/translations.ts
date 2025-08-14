@@ -3,7 +3,10 @@ export const TRANSLATIONS = {
         about: {
             title: 'Over mij',
             paragraphs: [
-                
+                'Ik ben een gepassioneerde softwareontwikkelaar met een achtergrond in Java, Python, Angular en Vue.js. Mijn studiepad aan TU Delft, Hogeschool Leiden en HAN heeft mij een breed perspectief gegeven op softwareontwikkeling en hoe verschillende technologieën en werkwijzen samenwerken om kwalitatieve en ethische applicaties te bouwen.',
+                'Tijdens mijn stages bij Alliander en OpenValue heb ik mijn Python-vaardigheden verdiept en ervaring opgedaan met SQL en AWS. Naast mijn studie focus ik in mijn vrije tijd op het ontwikkelen van ethische productiviteits- en zelfverbeteringstools, zoals habit trackers, calorie counters en een geïntegreerde desktop productivity tool. Dit stelt mij in staat om theorie en praktijk te combineren en continu te leren.',
+                'Mijn passie ligt bij het maken van software die de gebruiker ondersteunt in plaats van te manipuleren. Ik geloof dat technologie terug in de hand van de mens moet zijn, met respect voor privacy, transparantie en minimale afleiding. Elk project dat ik aanneem of ontwikkel, staat in het teken van deze waarden en van het leveren van een betrouwbare en gebruiksvriendelijke ervaring.',
+                'Op dit moment ben ik bezig mijn zzp-activiteiten verder uit te bouwen met als doel een eigen bedrijf dat gespecialiseerd is in ethische softwareontwikkeling. Ik werk graag samen met klanten die dezelfde waarden delen, waarbij open communicatie en wederzijds begrip altijd centraal staan, zodat we samen oplossingen kunnen bouwen die écht waarde toevoegen.'
             ]            
         },
         navigation: {
@@ -28,8 +31,11 @@ export const TRANSLATIONS = {
         about: {
             title: 'About me',
             paragraphs: [
-                
-            ] 
+                'I am a passionate software developer with a background in Java, Python, Angular, and Vue.js. My academic journey at TU Delft, Leiden University of Applied Sciences, and HAN University of Applied Sciences has given me a broad perspective on software development and how different technologies and approaches come together to build high-quality and ethical applications.',
+                'During my internships at Alliander and OpenValue, I deepened my Python skills and gained experience with SQL and AWS. Outside of my studies, I focus on developing ethical productivity and self-improvement tools, such as habit trackers, calorie counters, and an integrated desktop productivity tool. This allows me to combine theory and practice while continuously learning.',
+                'My passion lies in creating software that supports users rather than manipulates them. I believe technology should be back in the hands of the people, with respect for privacy, transparency, and minimal distractions. Every project I take on or develop reflects these values and aims to deliver a reliable and user-friendly experience.',
+                'Currently, I am expanding my freelance activities with the goal of building my own company focused on ethical software development. I enjoy collaborating with clients who share the same values, where open communication and mutual understanding are always central, so we can build solutions that truly add value together.'
+            ]
         },
         navigation: {
             items: ['Home', 'About me', 'Services', 'Skills', 'Experience', 'In development', 'Contact']
