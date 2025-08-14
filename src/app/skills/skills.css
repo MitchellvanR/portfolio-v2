@@ -1,0 +1,7 @@
+.skills {
+    height: 100vh;
+}
+
+.skills h1, p {
+    color: var(--text-color-dark);
+}
