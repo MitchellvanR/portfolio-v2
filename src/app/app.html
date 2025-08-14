@@ -2,10 +2,11 @@
     [activeSectionIndex]="currentSectionIndex"
     [theme]="currentTheme"
     [activeLanguage]="activeLanguage"
-    (sectionChange)="onSectionChange($event)">
+    (sectionChange)="onSectionChange($event)"
+    (languageChange)="onLanguageChange($event)">
 </app-navigation>
 <main>
-    <app-splash (sectionChange)="onSectionChange($event)"></app-splash>
+    <app-splash [activeLanguage]="activeLanguage" (sectionChange)="onSectionChange($event)"></app-splash>
     <app-about></app-about>
     <app-services></app-services>
     <app-skills></app-skills>

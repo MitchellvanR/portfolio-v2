@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
+import { TRANSLATIONS } from '../translations';
 
 @Component({
   selector: 'app-navigation',
@@ -9,10 +10,11 @@ import { CommonModule, ViewportScroller } from '@angular/common';
 })
 export class Navigation {
   @Input() activeSectionIndex!: number;
-  @Input() theme: 'light' | 'dark' = 'light';
-  @Input() activeLanguage: 'NL' | 'EN' = 'NL';
+  @Input() theme: 'light' | 'dark' = 'light'
+  @Input() activeLanguage: 'NL' | 'EN' = 'NL'
 
-  @Output() sectionChange = new EventEmitter<number>();
+  @Output() sectionChange = new EventEmitter<number>()
+  @Output() languageChange = new EventEmitter<'NL' | 'EN'>()
 
   sections = [
     {text: 'Home', target: "targetSplash"}, 
@@ -25,8 +27,16 @@ export class Navigation {
 
   constructor(private scroller: ViewportScroller) {}
 
+  get text() {
+    return TRANSLATIONS[this.activeLanguage].navigation
+  }
+
   get isSplash(): boolean {
     return this.activeSectionIndex === 0;
+  }
+
+  toggleLanguage(lang: 'NL' | 'EN') {
+    this.languageChange.emit(lang)
   }
 
   scrollToSection(index: number) {

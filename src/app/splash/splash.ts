@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { SplashInfo } from "./splash-info/splash-info";
 import { SplashPhoto } from "./splash-photo/splash-photo";
 
@@ -9,6 +9,8 @@ import { SplashPhoto } from "./splash-photo/splash-photo";
   styleUrl: './splash.css'
 })
 export class Splash {
+  @Input() activeLanguage: 'NL' | 'EN' = 'NL'
+
   @Output() sectionChange = new EventEmitter<number>()
 
   onSplashInfoSectionChange(index: number) {

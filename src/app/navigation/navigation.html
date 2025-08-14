@@ -5,7 +5,7 @@
             *ngFor="let section of sections; let i = index"
             [class.active]="i === activeSectionIndex"
             (click)="scrollToSection(i)">
-            {{ section.text }}
+            {{ text.items[i] }}
             @if (i === activeSectionIndex) {
                 <div class="hr-accent"></div>
             }
@@ -15,7 +15,8 @@
     <ul class="language">
         <li 
             class="clickable-list-item"
-            [class.active]="activeLanguage === 'NL'">
+            [class.active]="activeLanguage === 'NL'"
+            (click)="toggleLanguage('NL')">
             NL
             @if (activeLanguage === 'NL') {
                 <div class="hr-accent"></div>
@@ -24,7 +25,8 @@
         <li>|</li>
         <li 
             class="clickable-list-item"
-            [class.active]="activeLanguage === 'EN'">
+            [class.active]="activeLanguage === 'EN'"
+            (click)="toggleLanguage('EN')">
             EN
             @if (activeLanguage === 'EN') {
                 <div class="hr-accent"></div>

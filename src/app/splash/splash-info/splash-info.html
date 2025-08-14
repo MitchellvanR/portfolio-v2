@@ -1,9 +1,11 @@
 <section class="splash-info-section">
     <div class="info-container">
-        <h1>Hello, world!</h1>
+        <h1>{{ text.title }}</h1>
+        <p><i>{{ text.subtitle }}</i></p>
         <div class="hr-accent"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum repellendus dolor atque dolores totam, doloremque nulla illo, enim unde temporibus maxime nobis. Quasi necessitatibus est, enim molestias accusantium eos veniam?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b style="color: var(--accent-color)">Quo nihil</b>, quis corporis assumenda aliquam voluptas quisquam dolorem. Ut error minima enim repellat nostrum, incidunt voluptatibus hic eius dolor non id?</p>
+        @for (paragraph of text.paragraphs; track paragraph) {
+            <p [innerHTML]="paragraph"></p>
+        }
         <div class="scroll-down" (click)="scrollToAbout()"></div>
     </div>
 </section>

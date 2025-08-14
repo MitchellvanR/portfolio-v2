@@ -20,6 +20,10 @@ html {
   scroll-behavior: smooth;
 }
 
+b {
+  color: var(--accent-color);
+}
+
 h1, p, li {
   color: var(--text-color-light);
   font-family: 'Montserrat', sans-serif;

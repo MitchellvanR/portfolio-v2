@@ -25,6 +25,13 @@ export class App {
   currentTheme: 'light' | 'dark' = 'dark';
   activeLanguage: 'NL' | 'EN' = 'NL';
 
+  constructor() {
+    const savedLang = localStorage.getItem('activeLanguage') as 'NL' | 'EN' | null
+    if (savedLang) {
+      this.activeLanguage = savedLang;
+    }
+  }
+
   ngAfterViewInit() {
     this.sections = Array.from(document.querySelectorAll('main article')) as HTMLElement[];
 
@@ -50,6 +57,11 @@ export class App {
     this.currentSectionIndex = index
     const theme = this.sections[index].dataset['theme'] as 'light' | 'dark'
     this.currentTheme = theme || 'light'
+  }
+
+  onLanguageChange(lang: 'NL' | 'EN') {
+    this.activeLanguage = lang
+    localStorage.setItem('activeLanguage', lang)
   }
 
   @HostListener('wheel', ['$event'])
