@@ -27,7 +27,8 @@ export const TRANSLATIONS = {
             ]
         },
         skills: {
-
+            title: 'Vaardigheden',
+            techSkills: ['Python', 'Java', 'Angular', 'Microsoft SQL Server', 'Amazon Web Services']
         },
         splash: {
             title: 'Mitchell van Rijswijk',
@@ -66,7 +67,8 @@ export const TRANSLATIONS = {
             ]
         },
         skills: {
-
+            title: 'Skills',
+            techSkills: ['Python', 'Java', 'Angular', 'Microsoft SQL Server', 'Amazon Web Services']
         },
         splash: {
             title: 'Mitchell van Rijswijk',

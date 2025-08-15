@@ -1,17 +1,14 @@
 <article class="skills" data-theme="light" id="targetSkills">
-    <h1>Skills</h1>
+    <h1>{{ text.title }}</h1>
     <section class="skills-section">
         <ul class="page-split-container" id="left">
-            <app-skill-card></app-skill-card>
-            <app-skill-card></app-skill-card>
-            <app-skill-card></app-skill-card>
-            <app-skill-card></app-skill-card>
-            <app-skill-card></app-skill-card>
+            @for (skill of text.techSkills; track i; let i = $index) {
+                <app-skill-card 
+                    [text]="skill"
+                    [imageUrl]="skillLogos[i]"></app-skill-card>
+            }
         </ul>
         <ul class="page-split-container" id="right">
-            <app-skill-card></app-skill-card>
-            <app-skill-card></app-skill-card>
-            <app-skill-card></app-skill-card>
         </ul>
     </section>
 </article>

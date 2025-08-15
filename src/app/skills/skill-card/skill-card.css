@@ -5,10 +5,16 @@
     display: flex;
     flex-direction: row;
     height: 10vh;
-    width: 30vw;
+    width: 40vw;
+}
+
+.skill-card img {
+    aspect-ratio: 1/1;
+    margin-left: 2vw;
+    width: 3vw;
 }
 
 .skill-card p {
-    font-size: 1.7em;
-    margin-left: 3vw;
+    font-size: 1.4em;
+    margin-left: 2vw;
 }
