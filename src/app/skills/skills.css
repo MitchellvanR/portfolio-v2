@@ -7,7 +7,7 @@
     height: 100vh;
 }
 
-.skills h1, li {
+.skills h1, h2, p, li {
     color: var(--text-color-dark);
 }
 
@@ -32,6 +32,12 @@
 
 #left {
     border-right: 1.5px solid var(--accent-color);
+}
+
+#right h2, p {
+    align-self: flex-start;
+    margin-left: 2vw;
+    max-width: 90%;
 }
 
 .page-split-container li {

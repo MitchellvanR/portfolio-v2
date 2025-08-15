@@ -28,6 +28,13 @@ export const TRANSLATIONS = {
         },
         skills: {
             title: 'Vaardigheden',
+            subtitle: 'Hoe ik deze vaardigheden toepas...',
+            explanationParagraphs: [
+                'Ik heb ruim zes jaar ervaring met <b>Java</b>, waarmee ik tijdens mijn opleiding meerdere projecten heb uitgevoerd, onder andere voor de <b>Politie Leiden</b> en <b>ARAG</b>. Hier bouwde ik robuuste backend-oplossingen die tot op de dag van vandaag nog gebruikt worden.',
+                'Momenteel gebruik ik voornamelijk <b>Python</b>, dat ik tijdens stages bij <b>Alliander</b> en <b>OpenValue</b> heb toegepast op AI-toepassingen en data-analyse. Zo realiseerde ik bij Alliander een computer vision-project en bij OpenValue een clipgeneratieproject, waarmee ik concrete oplossingen leverde voor complexe use cases.',
+                'Voor frontend development maak ik gebruik van <b>Angular</b>, een framework dat ik mezelf heb aangeleerd en waarmee deze portfoliowebsite is gebouwd. Tijdens mijn opleiding maakte ik ook ondersteunende frontends bij eerdere projecten, waardoor de gebruikservaring en het overzicht verbeterden.',
+                'Het databasebeheersysteem dat ik het meest gebruik is <b>Microsoft SQL Server</b>, waarin ik tijdens mijn opleiding ben opgeleid. Daarnaast heb ik tijdens stages ervaring opgedaan met <b>AWS</b>, werkend met <b>ECR</b>, <b>EC2</b>, <b>Amplify</b> en <b>Cognito</b>, waarmee ik cloudgebaseerde oplossingen en infrastructuur kon opzetten.'
+            ],
             techSkills: ['Python', 'Java', 'Angular', 'Microsoft SQL Server', 'Amazon Web Services']
         },
         splash: {
@@ -68,6 +75,13 @@ export const TRANSLATIONS = {
         },
         skills: {
             title: 'Skills',
+            subtitle: 'How I apply these skills...',
+            explanationParagraphs: [
+                'I have over six years of experience with <b>Java</b>, which I applied in multiple projects during my studies, including for <b>Politie Leiden</b> and <b>ARAG</b>. There, I built robust backend solutions that are still in use today.',
+                'I currently use <b>Python</b> primarily, which I applied during internships at <b>Alliander</b> and <b>OpenValue</b> for artificial intelligence applications and data analysis. At Alliander, I implemented a computer vision project, and at OpenValue, I worked on a clip generation project, delivering concrete solutions for complex use cases.',
+                'For frontend development, I use <b>Angular</b>, a framework I taught myself and which was used to build this portfolio website. During my studies, I used this framework to create supporting frontends for previously named projects, improving both usability and overall project clarity.',
+                'The database system I use most is <b>Microsoft SQL Server</b>, in which I was trained during my studies. Additionally, during my internships, I gained experience with <b>Amazon Web Services</b>, working with AWS <b>ECR</b>, <b>EC2</b>, <b>Amplify</b>, and <b>Cognito</b>, enabling me to set up cloud-based solutions and infrastructure.'
+            ],
             techSkills: ['Python', 'Java', 'Angular', 'Microsoft SQL Server', 'Amazon Web Services']
         },
         splash: {

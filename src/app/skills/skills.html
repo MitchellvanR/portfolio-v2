@@ -9,6 +9,10 @@
             }
         </ul>
         <ul class="page-split-container" id="right">
+            <h2>{{ text.subtitle }}</h2>
+            @for (paragraph of text.explanationParagraphs; track i; let i = $index) {
+                <p [innerHTML]="paragraph"></p>
+            }
         </ul>
     </section>
 </article>
