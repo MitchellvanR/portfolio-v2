@@ -22,10 +22,10 @@
     background-color: var(--accent-color);
     border: none;
     border-radius: 15px;
-    font-size: 1.2em;
-    height: 7.5%;
+    font-size: 1.1em;
+    height: 5%;
     transition: transform .3s ease;
-    width: 15%;
+    width: 12%;
 }
 
 .contact-me:hover {
