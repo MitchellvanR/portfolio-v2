@@ -5,7 +5,7 @@
     <div class="text-container">
         <h1>{{  text.title  }}</h1>
         <div class="hr-accent"></div>
-        @for (paragraph of text.paragraphs; track paragraph) {
+        @for (paragraph of text.paragraphs; track i; let i = $index) {
             <p>{{ paragraph }}</p>
         }
     </div>

@@ -10,10 +10,21 @@ export const TRANSLATIONS = {
             ]            
         },
         navigation: {
-            items: ['Start', 'Over mij', 'Diensten', 'Vaardigheden', 'Ervaring', 'In ontwikkeling', 'Contact']
+            items: ['Start', 'Over mij', 'Aanbod', 'Vaardigheden', 'Ervaring', 'In ontwikkeling', 'Contact']
         },
         services: {
-
+            title: 'Aanbod',
+            buttonText: 'Neem contact op',
+            services: [
+                'Website ontwerp en ontwikkeling',
+                'Full-stack webapplicatie ontwikkeling',
+                'Software op maat'
+            ],
+            descriptions: [
+                ['Nieuwe website vanaf nul', 'Modernisering bestaande websites', 'Responsief en mobielvriendelijk ontwerp', 'Snel, betrouwbaar en gebruiksvriendelijk'],
+                ['Op maat gemaakte webapps', 'Front- en backend ontwikkeling', 'Integratie met externe systemen', 'Schaalbaar en onderhoudsvriendelijk'],
+                ['Apps, desktop tools en plugins', 'Prototypes en proof of concepts', 'Complexe softwareproblemen verkennen', 'Flexibel naar klantwensen']
+            ]
         },
         skills: {
 
@@ -41,7 +52,18 @@ export const TRANSLATIONS = {
             items: ['Home', 'About me', 'Services', 'Skills', 'Experience', 'In development', 'Contact']
         },
         services: {
-
+            title: 'Services',
+            buttonText: 'Contact me',
+            services: [
+                'Website Design and Development',
+                'Full-Stack Web Application Development',
+                'Custom Software'
+            ],
+            descriptions: [
+                ['Brand new websites', 'Modernize existing websites', 'Responsive and mobile-friendly', 'Fast, reliable, user-friendly'],
+                ['Custom web applications', 'Frontend & backend development', 'Integration with external systems', 'Scalable and maintainable'],
+                ['Apps, desktop tools and plugins', 'Prototypes and proof of concepts', 'Explore complex software problems', 'Flexible to client needs']
+            ]
         },
         skills: {
 

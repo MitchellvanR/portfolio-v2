@@ -1,15 +1,16 @@
 <nav class="navbar" [ngClass]="[theme, isSplash ? 'splash-language-dark' : '']">
     <ul class="navigation">
-        <li
-            class="clickable-list-item"
-            *ngFor="let section of sections; let i = index"
-            [class.active]="i === activeSectionIndex"
-            (click)="scrollToSection(i)">
-            {{ text.items[i] }}
-            @if (i === activeSectionIndex) {
-                <div class="hr-accent"></div>
-            }
-        </li>
+        @for (section of sections; track i; let i = $index) {
+            <li
+                class="clickable-list-item"
+                [class.active]="i === activeSectionIndex"
+                (click)="scrollToSection(i)">
+                {{ text.items[i] }}
+                @if (i === activeSectionIndex) {
+                    <div class="hr-accent"></div>
+                }
+            </li>
+        }
     </ul>
 
     <ul class="language">

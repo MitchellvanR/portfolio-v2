@@ -1,4 +1,34 @@
 .services {
+    align-items: center;
     background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     height: 100vh;
+    justify-content: center;
+}
+
+.services h1 {
+    line-height: normal;
+}
+
+.service-cards {
+    display: grid;
+    gap: 5vw;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact-me {
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2em;
+    height: 7.5%;
+    transition: transform .3s ease;
+    width: 15%;
+}
+
+.contact-me:hover {
+    cursor: pointer;
+    transform: scale(1.05);
 }

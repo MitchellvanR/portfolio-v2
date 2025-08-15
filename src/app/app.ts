@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { ChangeDetectorRef, Component, HostListener } from '@angular/core';
 import { Splash } from './splash/splash'
 import { About } from "./about/about";
 import { Skills } from "./skills/skills";
@@ -22,34 +22,35 @@ export class App {
   sections: HTMLElement[] = []
   currentSectionIndex = 0
   isScrolling = false
-  currentTheme: 'light' | 'dark' = 'dark';
-  activeLanguage: 'NL' | 'EN' = 'NL';
+  currentTheme: 'light' | 'dark' = 'dark'
+  activeLanguage: 'NL' | 'EN' = 'NL'
 
-  constructor() {
+  constructor(private cdr: ChangeDetectorRef) {
     const savedLang = localStorage.getItem('activeLanguage') as 'NL' | 'EN' | null
     if (savedLang) {
-      this.activeLanguage = savedLang;
+      this.activeLanguage = savedLang
     }
   }
 
   ngAfterViewInit() {
-    this.sections = Array.from(document.querySelectorAll('main article')) as HTMLElement[];
+    this.sections = Array.from(document.querySelectorAll('main article')) as HTMLElement[]
 
-    const savedIndex = sessionStorage.getItem('currentSectionIndex');
+    const savedIndex = sessionStorage.getItem('currentSectionIndex')
     if (savedIndex) {
-      this.currentSectionIndex = +savedIndex;
-      this.scrollToCurrent();
+      this.currentSectionIndex = +savedIndex
+      this.scrollToCurrent()
+      this.cdr.detectChanges()
     }
 
     window.addEventListener('scroll', () => {
       const rect = this.sections[this.currentSectionIndex].getBoundingClientRect();
       if (Math.abs(rect.top) < 1) {
-        this.isScrolling = false;
+        this.isScrolling = false
       }
     });
 
     window.addEventListener('beforeunload', () => {
-      sessionStorage.setItem('currentSectionIndex', this.currentSectionIndex.toString());
+      sessionStorage.setItem('currentSectionIndex', this.currentSectionIndex.toString())
     });
   }
 
@@ -99,13 +100,23 @@ export class App {
 
   scrollToCurrent(fromWheel: boolean = false) {
     const currentSection = this.sections[this.currentSectionIndex]
-    currentSection.scrollIntoView({ behavior: 'smooth' });
+    currentSection.scrollIntoView({ behavior: 'smooth' })
+
     const theme = currentSection.dataset['theme'] as 'light' | 'dark'
     this.currentTheme = theme || 'light'
 
     if (fromWheel) {
-      this.isScrolling = true;
-      setTimeout(() => this.isScrolling = false, 200)
+      this.isScrolling = true
+
+      const onScroll = () => {
+        const rect = currentSection.getBoundingClientRect()
+        if (Math.abs(rect.top) < 1) {
+          this.isScrolling = false
+          window.removeEventListener('scroll', onScroll)
+        }
+      }
+
+      window.addEventListener('scroll', onScroll)
     }
   }
 }
