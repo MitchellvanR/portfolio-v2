@@ -42,6 +42,6 @@ h2 {
 }
 
 .hr-accent {
-    border: 1px solid var(--accent-color);
-    width: 100%;
+  border: 1px solid var(--accent-color);
+  width: 100%;
 }
