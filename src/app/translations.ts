@@ -28,7 +28,7 @@ export const TRANSLATIONS = {
         },
         skills: {
             title: 'Vaardigheden',
-            subtitle: 'Hoe ik deze vaardigheden toepas...',
+            subtitle: 'Van bekwaamheid naar waarde...',
             explanationParagraphs: [
                 'Ik heb ruim zes jaar ervaring met <b>Java</b>, waarmee ik tijdens mijn opleiding meerdere projecten heb uitgevoerd, onder andere voor de <b>Politie Leiden</b> en <b>ARAG</b>. Hier bouwde ik robuuste backend-oplossingen die tot op de dag van vandaag nog gebruikt worden.',
                 'Momenteel gebruik ik voornamelijk <b>Python</b>, dat ik tijdens stages bij <b>Alliander</b> en <b>OpenValue</b> heb toegepast op AI-toepassingen en data-analyse. Zo realiseerde ik bij Alliander een computer vision-project en bij OpenValue een clipgeneratieproject, waarmee ik concrete oplossingen leverde voor complexe use cases.',
@@ -75,7 +75,7 @@ export const TRANSLATIONS = {
         },
         skills: {
             title: 'Skills',
-            subtitle: 'How I apply these skills...',
+            subtitle: 'From skills to value...',
             explanationParagraphs: [
                 'I have over six years of experience with <b>Java</b>, which I applied in multiple projects during my studies, including for <b>Politie Leiden</b> and <b>ARAG</b>. There, I built robust backend solutions that are still in use today.',
                 'I currently use <b>Python</b> primarily, which I applied during internships at <b>Alliander</b> and <b>OpenValue</b> for artificial intelligence applications and data analysis. At Alliander, I implemented a computer vision project, and at OpenValue, I worked on a clip generation project, delivering concrete solutions for complex use cases.',
