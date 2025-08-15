@@ -1,6 +1,6 @@
 .skill-card {
     align-items: center;
-    background-color: var(--primary-color);
+    background: var(--primary-gradient);
     border-radius: 15px 0 15px 0;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     display: flex;

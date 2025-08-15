@@ -79,7 +79,7 @@ export const TRANSLATIONS = {
             explanationParagraphs: [
                 'I have over six years of experience with <b>Java</b>, which I applied in multiple projects during my studies, including for <b>Politie Leiden</b> and <b>ARAG</b>. There, I built robust backend solutions that are still in use today.',
                 'I currently use <b>Python</b> primarily, which I applied during internships at <b>Alliander</b> and <b>OpenValue</b> for artificial intelligence applications and data analysis. At Alliander, I implemented a computer vision project, and at OpenValue, I worked on a clip generation project, delivering concrete solutions for complex use cases.',
-                'For frontend development, I use <b>Angular</b>, a framework I taught myself and which was used to build this portfolio website. During my studies, I used this framework to create supporting frontends for previously named projects, improving both usability and overall project clarity.',
+                'For frontend development, I use <b>Angular</b>, a framework I taught myself and which was used to build this portfolio website. During my studies, I used this framework to create supporting frontends for previously mentioned projects, improving both usability and overall project clarity.',
                 'The database system I use most is <b>Microsoft SQL Server</b>, in which I was trained during my studies. Additionally, during my internships, I gained experience with <b>Amazon Web Services</b>, working with AWS <b>ECR</b>, <b>EC2</b>, <b>Amplify</b>, and <b>Cognito</b>, enabling me to set up cloud-based solutions and infrastructure.'
             ],
             techSkills: ['Python', 'Java', 'Angular', 'Microsoft SQL Server', 'Amazon Web Services']

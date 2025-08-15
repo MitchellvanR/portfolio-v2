@@ -1,6 +1,6 @@
 .splash-info-section {
     align-items: center;
-    background-color: var(--primary-color);
+    background: var(--primary-gradient);
     display: flex;
     height: 100%;
     justify-content: center;
