@@ -11,6 +11,8 @@ import { ServiceCard } from './service-card/service-card';
 export class Services {
   @Input() activeLanguage: 'NL' | 'EN' = 'NL'
 
+  serviceIcons = ['website.jpg', 'webapp.jpg', 'custom-software.jpg']
+
   get text() {
     return TRANSLATIONS[this.activeLanguage].services
   }

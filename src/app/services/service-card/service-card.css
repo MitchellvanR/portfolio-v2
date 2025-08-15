@@ -38,6 +38,7 @@
 
 .icon {
     aspect-ratio: 1/1;
+    border: 2px solid var(--primary-color);
     border-radius: 50%;
     max-height: 15vh;
 }

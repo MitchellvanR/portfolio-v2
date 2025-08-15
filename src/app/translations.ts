@@ -10,10 +10,10 @@ export const TRANSLATIONS = {
             ]            
         },
         navigation: {
-            items: ['Start', 'Over mij', 'Aanbod', 'Vaardigheden', 'Ervaring', 'In ontwikkeling', 'Contact']
+            items: ['Start', 'Over mij', 'Diensten', 'Vaardigheden', 'Ervaring', 'In ontwikkeling', 'Contact']
         },
         services: {
-            title: 'Aanbod',
+            title: 'Diensten',
             buttonText: 'Neem contact op',
             services: [
                 'Website ontwerp en ontwikkeling',

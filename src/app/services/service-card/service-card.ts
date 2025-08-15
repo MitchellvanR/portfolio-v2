@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 export class ServiceCard {
   @Input() service!: string
   @Input() description!: string[]
+  @Input() icon!: string
 }
